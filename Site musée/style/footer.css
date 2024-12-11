@@ -1,0 +1,18 @@
+.footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-top: solid;
+        border-color: #D4B25B ;
+        border-width: 4px;
+        font-family: 'Inter', sans-serif;
+        font-size: x-large;
+        margin-top: 10px;
+}
+
+.map {
+        width: 50%;
+        height: 400px;
+        background: #d6d6d6;
+}

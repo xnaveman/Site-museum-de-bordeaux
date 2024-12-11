@@ -3,3 +3,42 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin: 0rem;
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 768px){
+h1 {
+    font-size: 2.8rem;
+    font-weight: 400 bold;
+}}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 400 bold;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px){
+h2 {
+    font-size: 1.8rem;
+    font-weight: 200 bold;
+    
+}}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 350;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px){
+p {
+    font-size: 1rem;
+    font-weight: 380;
+}}

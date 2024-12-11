@@ -1,0 +1,49 @@
+.header{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: solid;
+  border-color: #D4B25B ;
+  border-width: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: x-large;
+  margin-bottom: 10;
+}
+
+.header a{
+  text-decoration: none;
+  color: black;
+}
+
+.header a:hover{
+  font-weight: bold;
+  color: #D4B25B;
+}
+
+.logo{
+  text-align: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header .menu {
+  margin: 0 auto;
+}
+
+
+.header .active{
+  text-decoration: underline;
+  text-decoration-color: #D4B25B;
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}

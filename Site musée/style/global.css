@@ -1,0 +1,48 @@
+.homePage {
+    display:flex;
+    justify-content: center;
+}
+
+.logo1Branche {
+    padding: 15px;
+    margin-right: 5rem;
+    width: 20rem;
+    height: 25rem;
+    justify-content: left;
+}
+
+.rightContentHomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+@media (max-width: 1080px){
+.logo1Branche{
+    width: 0;
+    padding: 0;
+    margin: 0;
+}}
+
+/**.treeIconHomePage {
+    width:  15rem;
+    height: 15rem;
+}
+
+@media (max-width: 1080px){
+.treeIconHomePage {
+    width: 0;
+    padding: 0;
+    margin: 0;
+}}**/
+
+.seeMore {
+    text-decoration: none;
+    
+}
+
+.museumWithPeople {
+    width: 100%;
+    outline-color: #D4B25B;
+}
