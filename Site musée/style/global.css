@@ -1,6 +1,7 @@
 .homePage {
     display:flex;
     justify-content: center;
+    margin: 20px;
 }
 
 .logo1Branche {
@@ -45,4 +46,60 @@
 .museumWithPeople {
     width: 100%;
     outline-color: #D4B25B;
+    display: block;
+    max-width: 100%;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    background: #f3f3f3;
+}
+
+.expositions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.expositionText {
+    display: flex;
+    flex-direction: column;
+}
+
+.museumExpositions {
+    width: 45%;
+    max-width: 100%;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 10px;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+    flex: 0 0 200px;
+    }
+}
+.participer-soutenir{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    background-color: #f3f3f3;
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 30px;
 }

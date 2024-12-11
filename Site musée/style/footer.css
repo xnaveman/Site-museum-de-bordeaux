@@ -1,7 +1,6 @@
 .footer{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         background-color: white;
         border-top: solid;
         border-color: #D4B25B ;
@@ -9,10 +8,53 @@
         font-family: 'Inter', sans-serif;
         font-size: x-large;
         margin-top: 10px;
+        padding: 20px;
+}     
+
+.first-row{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
 }
 
-.map {
-        width: 50%;
-        height: 400px;
-        background: #d6d6d6;
+.second-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.metropole {
+        width: 25%;
+        max-width: 50%;
+}
+
+.bordeaux {
+        display: flex;
+        align-items: center;
+}
+
+.bordeaux a img {
+        transition: transform 0.3s ease;
+}
+
+.bordeaux a img:hover {
+        transform: scale(1.2);
+}
+
+.reseaux {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+}
+
+.reseaux li a img {
+        width: 3.5rem;
+        transition: transform 0.3s ease;
+}
+
+.reseaux li a img:hover {
+        transform: scale(1.2);
 }
