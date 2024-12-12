@@ -22,6 +22,11 @@
   text-decoration: underline;
 }
 
+@media (max-width: 768px){
+.menu {
+  display: none;
+}}
+
 .logo{
   text-align: left;
   width: 100px;

@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .homePage {
     display:flex;
     justify-content: center;
@@ -5,7 +9,7 @@
 }
 
 .logo1Branche {
-    padding: 15px;
+    padding: 0px;
     margin-right: 5rem;
     width: 20rem;
     height: 25rem;
@@ -69,9 +73,23 @@
     flex-direction: column;
 }
 
+@media (max-width: 768px){
+    .expositionText{
+        margin: 20px;
+    }
+}
+
 .museumExpositions {
-    width: 45%;
-    max-width: 100%;
+    width: 40%; 
+    max-width: 100%; 
+    display: flex; 
+    justify-content: flex-end; 
+    margin-left: auto;
+}
+@media (max-width: 768px){
+    .museumExpositions{
+        width : 75%
+    }
 }
 
 .left-arrow {
@@ -89,17 +107,214 @@
     flex: 0 0 200px;
     }
 }
-.participer-soutenir{
+
+.participer-soutenir {
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    align-items: center; 
+    flex-direction: row; 
     padding: 50px;
     background-color: #f3f3f3;
+    gap: 20px; 
 }
 
-.texte{
+@media (max-width: 768px){
+    .participer-soutenir{
+        flex-direction: column;
+    }
+}
+
+.texte {
+    flex: 1; 
+}
+
+.image_equipe {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 175px;
+}
+
+@media (max-width: 768px){
+    .image_equipe{
+        margin-top: 10px;
+    }
+}
+
+.image_equipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news{
+    padding: 10px;
+}
+
+.actus{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.actu-1{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+.actu-2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+.actu-3{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(46, 46, 46);
+}
+
+
+thead th:nth-child(1) {
+    width: 80%;
+}
+
+thead th:nth-child(2) {
+    width: 80%;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+th {
+    letter-spacing: 0,5px;
+}
+
+td {
+    letter-spacing: 0,5px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #c4c4c4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+
+table {
+    background-color: #ffffff;
+}
+
+.paiement-horaires{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textp1{
     margin-right: 30px;
+}
+
+.plus-d-offre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+    .plus-d-offre {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        text-align: center; 
+    }
+    .plus-d-offre img {
+        margin: 0 auto; 
+        display: block; 
+        max-width: 100%; 
+        height: auto; 
+    }
+    .offreText{
+        margin-bottom: 20px;
+    }
+}
+
+.offreText {
+    display: flex;
+    flex-direction: column;
+}
+
+.museumTarif {
+    width: 35%; 
+    max-width: 70%; 
+    display: flex; 
+    justify-content: flex-end; 
+    margin-left: auto;
+}
+
+@media (max-width: 768px){
+    .museumTarif{
+        width: 70%; 
+        display: flex; 
+        justify-content: flex-end; 
+    }
+}
+
+.mobileMenu button {
+    display: none;
+}
+
+@media (max-width: 768px){
+.mobileMenu button{
+    display: block;
+}}
+
+
+[popover] {
+    left: 0;
+    top: 0;
+    height: 130px;
+    width: 60dvw;
+    transition: transform .2s ease-out, opacity .2s ease-out,
+    display .2s ease-out;
+    transition-behavior: allow-discrete;
+
+    /*POPOVER EN ETAT FERMÉ*/
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+[popover]:popover-open {
+    @starting-style {/*POPOVER AVANT L'ENTREE DANS LE CHAMP*/
+    opacity: 0;
+    transform: translateX(-50px);
+    }
+
+    /*POPOVER EN ETAT OUVERT*/
+    opacity: 1;
+    transform: translateX(0px);
+    height: 130px
 }
