@@ -24,12 +24,6 @@
         align-items: center;
 }
 
-@media (max-width: 768px){
-        .map{
-                margin-right: 20px;
-        }
-}
-
 .metropole {
         width: 25%;
         max-width: 50%;

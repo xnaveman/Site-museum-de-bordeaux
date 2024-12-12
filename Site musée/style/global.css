@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body{
     overflow-x: hidden;
+    margin: 0;
+}
+
+section.section {
+    margin: 0;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+    align-items: center; 
+}
+
+@media (max-width: 667px) {
+    .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .homePage {
@@ -25,22 +46,18 @@ body{
 
 @media (max-width: 1080px){
 .logo1Branche{
-    width: 0;
-    padding: 0;
-    margin: 0;
+    display: none;
 }}
 
-/**.treeIconHomePage {
-    width:  15rem;
+.treeIconHomePage {
+    width:  20rem;
     height: 15rem;
 }
 
 @media (max-width: 1080px){
 .treeIconHomePage {
-    width: 0;
-    padding: 0;
-    margin: 0;
-}}**/
+    display: none;
+}}
 
 .seeMore {
     text-decoration: none;
@@ -68,29 +85,28 @@ body{
     padding: 0;
 }
 
+
+
 .expositionText {
     display: flex;
     flex-direction: column;
-}
-
-@media (max-width: 768px){
-    .expositionText{
-        margin: 20px;
-    }
 }
 
 .museumExpositions {
     width: 40%; 
     max-width: 100%; 
     display: flex; 
-    justify-content: flex-end; 
-    margin-left: auto;
+    justify-content: flex-end;
+    flex-direction: column;
 }
-@media (max-width: 768px){
-    .museumExpositions{
-        width : 75%
+
+@media (max-width: 667px){
+    .museumExpositions {
+        width: 100%;
     }
 }
+
+
 
 .left-arrow {
     position: absolute;
@@ -102,24 +118,31 @@ body{
     right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 667px) {
     .carousel-item {
     flex: 0 0 200px;
     }
 }
 
 .participer-soutenir {
-    display: flex;
-    align-items: center; 
-    flex-direction: row; 
-    padding: 50px;
     background-color: #f3f3f3;
-    gap: 20px; 
 }
 
-@media (max-width: 768px){
-    .participer-soutenir{
+@media (max-width: 990px) {
+    .participer-soutenir .flex {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 667px) {
+    .footer .flex{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 667px) {
+    .footer .first-row .flex{
+        width: fit-content;
     }
 }
 
@@ -127,14 +150,8 @@ body{
     flex: 1; 
 }
 
-.image_equipe {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    margin-top: 175px;
-}
 
-@media (max-width: 768px){
+@media (max-width: 667px){
     .image_equipe{
         margin-top: 10px;
     }
@@ -148,6 +165,71 @@ body{
 .news{
     padding: 10px;
 }
+
+/* CAROUSEL */
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+
+/********************************
+* Breakpoints
+*********************************/
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .carousel-item {
+        flex-basis: 450px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    body,
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+        font-size: 1.25rem;
+    }
+}
+
+*/
 
 .actus{
     display: flex;
@@ -179,51 +261,23 @@ body{
     width: 40%;
 }
 
-table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid rgb(46, 46, 46);
+
+* {
+    box-sizing: border-box;
 }
 
-
-thead th:nth-child(1) {
-    width: 80%;
+svg {
+    fill: currentColor;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-thead th:nth-child(2) {
-    width: 80%;
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
 }
-
-th,
-td {
-    padding: 20px;
-}
-
-th {
-    letter-spacing: 0,5px;
-}
-
-td {
-    letter-spacing: 0,5px;
-}
-
-tbody td {
-    text-align: center;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #c4c4c4;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-
-table {
-    background-color: #ffffff;
-}
+/* FIN CAROUSEL */
 
 .paiement-horaires{
     display: flex;
@@ -243,7 +297,7 @@ table {
     margin: 0;
     padding: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 667px) {
     .plus-d-offre {
         display: flex; 
         flex-direction: column; 
@@ -275,7 +329,7 @@ table {
     margin-left: auto;
 }
 
-@media (max-width: 768px){
+@media (max-width: 667px){
     .museumTarif{
         width: 70%; 
         display: flex; 
@@ -283,21 +337,32 @@ table {
     }
 }
 
-.mobileMenu button {
-    display: none;
+.mobileMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-@media (max-width: 768px){
+.mobileMenu button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+@media (max-width: 667px){
 .mobileMenu button{
-    display: block;
+    display: flex;
 }}
 
 
 [popover] {
+    right: 0;
     left: 0;
     top: 0;
-    height: 130px;
-    width: 60dvw;
+    height: 150px;
+    width: 300px;
     transition: transform .2s ease-out, opacity .2s ease-out,
     display .2s ease-out;
     transition-behavior: allow-discrete;
@@ -316,5 +381,62 @@ table {
     /*POPOVER EN ETAT OUVERT*/
     opacity: 1;
     transform: translateX(0px);
-    height: 130px
+    height: 150px
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #cacaca;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+tbody tr {
+    background-image: url(noise.png);
+}
+
+table {
+    background-color: #ffffff;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+.tarifs{
+    margin-left: 20px;
+    margin-right: 20px;
 }
