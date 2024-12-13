@@ -83,6 +83,7 @@ section.section {
     align-items: flex-start;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 
@@ -106,6 +107,32 @@ section.section {
     }
 }
 
+.giraffeImg {
+    width: 150px;
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    transform: rotate(15deg);
+    z-index: -15000;
+}
+
+.rinhoPricing {
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+}
+
+@media (max-width: 667px){
+    .rinhoPricing{
+    display: none;
+}}
+
+@media (max-width: 1080px){
+.giraffeImg {
+    display: none;
+
+}}
 
 
 .left-arrow {
