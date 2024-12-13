@@ -22,17 +22,35 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        margin-top: 15px;
 }
+
+@media (max-width: 768px){
+.second-row{
+        margin-top: 15px;
+        border-top: solid;
+        border-width: 5px;
+        border-color: #D4B25B;
+}}
 
 .metropole {
-        width: 25%;
-        max-width: 50%;
+        width: 30%;
 }
 
+@media (max-width: 768px){
+.metropole {
+        width: 25%;
+}}
+
 .bordeaux {
-        display: flex;
-        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
 }
+
+@media (max-width: 768px){
+.bordeaux {
+        margin-top: 15px;
+}}
 
 .bordeaux a img {
         transition: transform 0.3s ease;
@@ -49,10 +67,20 @@
         padding: 0;
 }
 
+@media (max-width: 768px){
+.reseaux {
+        margin-top: 15px;
+}}
+
 .reseaux li a img {
         width: 3.5rem;
         transition: transform 0.3s ease;
 }
+
+@media (max-width: 768px){
+.reseaux li a img {
+        width: 140%;
+}}
 
 .reseaux li a img:hover {
         transform: scale(1.2);

@@ -9,6 +9,7 @@
   font-family: 'Inter', sans-serif;
   font-size: x-large;
   margin-bottom: 10;
+  padding-right: 10px;
 }
 
 .header a{
@@ -22,7 +23,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px){
+@media (max-width: 803px){
 .menu {
   display: none;
 }}
@@ -46,6 +47,8 @@
 
 ul{
   list-style: none;
+  padding: 1px;
+  margin: 1px
 }
 
 li{
