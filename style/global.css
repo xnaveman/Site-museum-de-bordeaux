@@ -386,7 +386,7 @@ svg {
     /*POPOVER EN ETAT OUVERT*/
     opacity: 1;
     transform: translateX(0px);
-    height: 150px
+    height: 240px
 }
 
 tbody tr:nth-child(odd) {

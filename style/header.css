@@ -56,3 +56,32 @@ li{
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.mobileNav ul {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+
+}
+
+.mobileNav ul li {
+  text-decoration: underline;
+  text-decoration-color: #D4B25B;
+  margin-bottom: 15px;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileNavList {
+  display: flex;
+  justify-content: center;
+}
+
+.mobileNavClose {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
