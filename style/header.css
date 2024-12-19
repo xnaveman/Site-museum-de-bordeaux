@@ -12,6 +12,11 @@
   padding-right: 10px;
 }
 
+header.dark-mode {
+  background-color: #757575;
+  color: white;
+}
+
 .header a{
   text-decoration: none;
   color: black;

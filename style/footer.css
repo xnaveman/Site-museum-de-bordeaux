@@ -11,6 +11,11 @@
         padding: 20px;
 }     
 
+footer.dark-mode {
+        background-color: #757575;
+        color: white;
+}
+
 .first-row{
         display: flex;
         justify-content: space-around;

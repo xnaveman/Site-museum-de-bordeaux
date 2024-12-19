@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body{
+    background-color: white;
     overflow-x: hidden;
     margin: 0;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
 }
 
 section.section {
@@ -153,6 +160,11 @@ section.section {
 
 .participer-soutenir {
     background-color: #f3f3f3;
+}
+
+.participer-soutenir.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
 }
 
 @media (max-width: 990px) {
